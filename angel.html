@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="LOVEFIT - Video Fitness Workout">
+	<meta name="author" content="Ansonika">
+	<title>T-Health</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700|Kalam:400,700" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
+	<link href="css/magnific-popup.min.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<!-- SPECIFIC CSS -->
+	<link href="css/ion.rangeSlider.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="layer"></div>
+	<!-- Mobile menu overlay mask -->
+
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div>
+	<!-- End Preload -->
+
+	<!-- Header ================================================== -->
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-3">
+					<a href="index.html" id="logo">
+                        <img src="images/logo.png" width="100" height="27" alt="t-health" data-retina="true"> 
+                        <!--
+						<img src="img/logo.png" width="95" height="27" alt="" data-retina="true" class="logo_normal">
+						<img src="img/logo_sticky.png" width="95" height="27" alt="" data-retina="true" class="logo_sticky">
+                        -->
+					</a>
+				</div>
+			</div>
+			<!-- End row -->
+		</div>
+		<!-- End container -->
+	</header>
+	<!-- End Header =============================================== -->
+
+	<!-- SubHeader =============================================== -->
+	<section class="parallax_window_in" style="background-color:#6b6b6b;">
+		<div id="sub_content_in">
+			<h1>Are you a health tech angel?</h1>
+			<p></p>
+		</div>
+	</section>
+	<!-- End section -->
+	<!-- End SubHeader ============================================ -->
+
+	<div class="container_styled_1">
+		<div class="container margin_60_35">
+			<div class="row" align="center">
+                
+				<h4>Are you a health tech angel?</h4>
+				<form action="#" class="popup-form" id="myLogin" style="max-width: 480px;">
+                    <label style="font-size: 12px;font-weight: 500;" for="email">
+                        Kindly leave us your Email id/ Phone number so that we can reach out to you</label>
+					<input type="text" class="form-control" placeholder="Email/ Phone">
+                    <label style="font-size: 11px;font-weight: 500;" for="phone">
+                        Write down a message for us. We loved to hear any of your thoughts. Salute!</label>
+					<input type="text" class="form-control" placeholder="Message">
+					<button type="submit" class="btn btn-submit">Submit</button>
+				</form>
+                <!-- End col -->
+			</div>
+			<!-- End Row -->
+		</div>
+		<!-- End container -->
+     </div>
+	
+
+	<div id="toTop"></div>
+	<!-- Back to top button -->
+
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/common_scripts_min.js"></script>
+	<script src="assets/validate.js"></script>
+	<script src="js/functions.js"></script>
+
+	<!-- SPECIFIC SCRIPTS -->
+	<script src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/switchery.min.js"></script>
+	<script>
+		$("#range").ionRangeSlider({
+			hide_min_max: true,
+			keyboard: true,
+			min: 30,
+			max: 180,
+			from: 40,
+			to: 90,
+			type: 'double',
+			step: 1,
+			prefix: "$",
+			grid: false
+		});
+		var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+		elems.forEach(function (html) {
+			var switchery = new Switchery(html, {
+				size: 'small'
+			});
+		});
+	</script>
+</body>
+
+</html>
